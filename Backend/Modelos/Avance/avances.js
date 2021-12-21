@@ -30,7 +30,7 @@ const AdvanceProject =new Schema({
         required: true,
         },
 
-    proyecto: {
+    project: {
         type: Schema.Types.ObjectId,
         ref: ProjectModel,
         required: true,
@@ -38,7 +38,7 @@ const AdvanceProject =new Schema({
 
     });
     
-    const ModeloAvance = model('Avance', AdvanceProject);
+    const ModeloAvance = model('Avance', AdvanceProject, 'Avances');
 
     export { ModeloAvance };
     

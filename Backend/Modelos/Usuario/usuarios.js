@@ -1,8 +1,5 @@
 import mongoose from 'mongoose';
-import { Projectm } from '../Proyecto/Proyecto.js';
-import { UserModel } from '../Usuario/usuario.js';
-
-
+import { UserModel } from '../Usuario/usuarios';
 
 const { Schema, model } = mongoose;
 
@@ -62,7 +59,7 @@ userSchema.virtual('proyectosLiderados', {
     foreignField: 'estudiante',
   });
   
-  const UserModel = model('User', userSchema);
+  const UserModel = model('User', userSchema, 'Usuarios');
   
   export { UserModel };
   
