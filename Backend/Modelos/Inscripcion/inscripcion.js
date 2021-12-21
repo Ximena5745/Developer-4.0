@@ -33,6 +33,6 @@ const Registration =new Schema({
     
 })
 
-const InscriptionModel = model('Inscripcion', Registration);
+const InscriptionModel = model('Inscripcion', Registration, 'Registros');
 
 export { InscriptionModel };
